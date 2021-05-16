@@ -1,4 +1,4 @@
-const tutorial = require('../module_tutorial');
+const tutorial = require('../modules/module_tutorial');
 console.log(tutorial);
 console.log(tutorial.sum(1, 1));
 console.log(tutorial.PI);

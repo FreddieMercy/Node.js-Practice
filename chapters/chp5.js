@@ -1,2 +1,2 @@
-require('../module_tutorial')
-require('../function_tutorial') // only called functions will be executed here. 
+require('../modules/module_tutorial')
+require('../modules/function_tutorial') // only called functions will be executed here. 
