@@ -10,4 +10,4 @@ const second = readFileSync('./data/second.txt', 'utf8')
 
 console.log(first, second)
 
-writeFileSync('./data/result.txt', `Here is the result : ${first} , ${second}`)
+writeFileSync('./data/result.txt', `Here is the result : ${first} , ${second}`, { flag: 'a' })
