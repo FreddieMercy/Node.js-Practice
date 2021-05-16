@@ -13,3 +13,7 @@ class SomeMathObject {
 // module.exports.SomeMathObject = SomeMathObject;
 
 module.exports = { sum: sum, PI: PI, SomeMathObject: SomeMathObject };
+module.exports.items = ['item1', 'item2'];
+module.exports.Person = {
+    name: 'bob',
+}
