@@ -7,6 +7,7 @@ class SomeMathObject {
     }
 }
 
+// module.exports = sum;
 // module.exports.sum = sum;
 // module.exports.PI = PI;
 // module.exports.SomeMathObject = SomeMathObject;
