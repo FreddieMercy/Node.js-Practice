@@ -17,7 +17,7 @@ readFile('./data/first.txt', 'utf8', (err, result) => {
         const second = result;
 
         console.log(result);
-        writeFile('./data/result.txt', `Here is the result: ${first}, ${second}`, (err, result) => {
+        writeFile('./data/result.txt', `(2) Here is the result: ${first}, ${second}`, (err, result) => {
             if (err) {
                 console.log(err);
                 return;
