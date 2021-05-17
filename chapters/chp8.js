@@ -11,4 +11,4 @@ const second = readFileSync(path.resolve(__dirname, '../data/second.txt'), 'utf8
 
 console.log(first, second)
 
-writeFileSync(path.resolve(__dirname, '../data/result.txt'), `Here is the result : ${first} , ${second}`, { flag: 'a' })
+writeFileSync(path.resolve(__dirname, '../data/result.txt'), `(1) Here is the result : ${first} , ${second}`, { flag: 'a' })
