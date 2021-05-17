@@ -1,13 +1,9 @@
-const { readFileSync, writeFileSync } = require('fs')
+const { readFile, writeFile } = require('fs')
 
-//const fs= require('fs')
-
-//fs.readFileSync
-//fs.writeFileSync
-
-const first = readFileSync('./data/first.txt', 'utf8')
-const second = readFileSync('./data/second.txt', 'utf8')
-
-console.log(first, second)
-
-writeFileSync('./data/result.txt', `Here is the result : ${first} , ${second}`, { flag: 'a' })
+readFile('./data/first.txt', 'utf8', (err, result) => {
+    if (err) {
+        console.log(err);
+        return;
+    }
+    console.log(result);
+})
