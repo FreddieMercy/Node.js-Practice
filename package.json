@@ -1,0 +1,26 @@
+{
+  "name": "node.js-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreddieMercy/Node.js-Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreddieMercy/Node.js-Practice/issues"
+  },
+  "homepage": "https://github.com/FreddieMercy/Node.js-Practice#readme"
+}
