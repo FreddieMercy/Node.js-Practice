@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(5000);
 
-//TODO: setTimeOut, setInterval, nextTicket()
+//TODO: setTimeOut, setInterval, process.nextTick()
 //TODO: new Promise()
 //TODO: then(), catch()
 //TODO: async() & await
