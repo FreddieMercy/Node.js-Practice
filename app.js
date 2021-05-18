@@ -1,9 +1,10 @@
-const { readFile, writeFile } = require('fs')
+const http = require('http');
 
-readFile('./data/first.txt', 'utf8', (err, result) => {
-    if (err) {
-        console.log(err);
-        return;
-    }
-    console.log(result);
-})
+const server = http.createServer((req, res) => {
+
+    res.write('Welcome to our home page');
+    res.end();
+
+});
+
+server.listen(5000);
