@@ -1,3 +1,7 @@
+async function hello() {
+    return greeting = await Promise.resolve("Hello");
+};
 
-//TODO: async() & await
+hello().then(console.log);
+
 //TODO: require('util').promisify()
