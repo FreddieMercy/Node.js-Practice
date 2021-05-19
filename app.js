@@ -14,7 +14,51 @@ setTimeout(() => {
     }, 1000)
 }, 20000);
 
-//TODO: new Promise()
-//TODO: then(), catch()
+new Promise((success, fail) => {
+    let a = 1 + 1;
+    if (a === 2) {
+        success("success")
+    }
+    else {
+        fail("fail")
+    }
+}).then((message) => {
+    // 'then' means success
+    console.log("1. " + message)
+}).then((message) => {
+    // 'then' means success
+    console.log("2. " + message)
+}).then((message) => {
+    // 'then' means success
+    console.log("3. " + message)
+}).then((message) => {
+    // 'then' means success
+    console.log("4. " + message)
+}).then((message) => {
+    // 'then' means success
+    console.log("5. " + message)
+}).then((message) => {
+    // 'then' means success
+    console.log("6. " + message)
+}).catch((message) => {
+    // 'then' means success
+    console.log("1. " + message)
+}).catch((message) => {
+    // 'then' means success
+    console.log("2. " + message)
+}).catch((message) => {
+    // 'then' means success
+    console.log("3. " + message)
+}).catch((message) => {
+    // 'then' means success
+    console.log("4. " + message)
+}).catch((message) => {
+    // 'then' means success
+    console.log("5. " + message)
+}).catch((message) => {
+    // 'then' means success
+    console.log("6. " + message)
+})
+
 //TODO: async() & await
 //TODO: require('util').promisify()
