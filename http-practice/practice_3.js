@@ -6,5 +6,3 @@ async function hello() {
 
 // hello().then((msg) => { console.log(msg) });
 hello().then(console.log);
-
-//TODO: require('util').promisify()
