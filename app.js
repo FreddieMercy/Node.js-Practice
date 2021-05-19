@@ -14,9 +14,10 @@ setTimeout(() => {
     }, 1000)
 }, 20000);
 
+const isTrue = true;
+
 new Promise((success, fail) => {
-    let a = 1 + 1;
-    if (a === 2) {
+    if (isTrue) {
         success("success")
     }
     else {
@@ -63,8 +64,7 @@ new Promise((success, fail) => {
 // same to:
 
 function NewPromise(success, fail) {
-    let a = 1 + 1;
-    if (a === 2) {
+    if (isTrue) {
         success("success")
     }
     else {
