@@ -60,5 +60,25 @@ new Promise((success, fail) => {
     console.log("6. " + message)
 })
 
+// same to:
+
+function NewPromise(success, fail) {
+    let a = 1 + 1;
+    if (a === 2) {
+        success("success")
+    }
+    else {
+        fail("fail")
+    }
+}
+
+NewPromise((message) => {
+    // success/'then'
+    console.log("success. " + message)
+}, (message) => {
+    // fail/'catch'
+    console.log("fail. " + message)
+});
+
 //TODO: async() & await
 //TODO: require('util').promisify()
