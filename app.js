@@ -59,6 +59,12 @@ new Promise((success, fail) => {
 }).catch((message) => {
     // 'catch' means fail
     console.log("6. " + message)
+}).finally((message) => {
+    console.log("finally 1. " + message)
+}).finally((message) => {
+    console.log("finally 2. " + message)
+}).finally((message) => {
+    console.log("finally 3. " + message)
 })
 
 // same to:
@@ -71,7 +77,7 @@ function NewPromise(success, fail) {
         fail("fail")
     }
 }
-
+// but has not 'finally'
 NewPromise((message) => {
     // success/'then'
     console.log("success. " + message)
