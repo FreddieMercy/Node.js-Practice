@@ -94,6 +94,3 @@ NewPromise((message) => {
     // fail/'catch'
     console.log("fail. " + message)
 });
-
-//TODO: async() & await
-//TODO: require('util').promisify()
