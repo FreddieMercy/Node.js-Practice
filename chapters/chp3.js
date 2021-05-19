@@ -18,6 +18,16 @@ rl.question(`What is ${num1} + ${num2}? (answer is ${answer}) \n`, (userInput) =
     else {
         rl.setPrompt(`Incorrect! Please try again: What is ${num1} + ${num2}?`);
         rl.prompt();
+        rl.on("line", (userInput) => {
+            if (userInput.trim() == answer) {
+                console.log("Correct!!!")
+                rl.close();
+            }
+            else {
+                rl.setPrompt(`Incorrect! Please try again: What is ${num1} + ${num2}?`);
+                rl.prompt();
+            }
+        });
     }
 });
 
