@@ -1,5 +1,6 @@
 async function hello() {
-    return greeting = await Promise.resolve("Hello");
+    // return await Promise.resolve("Hello");
+    return greeting = await Promise.resolve("Hello"); // whatever, async function always return 'Promise'
 };
 
 hello().then(console.log);
