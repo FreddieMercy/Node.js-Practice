@@ -41,22 +41,22 @@ new Promise((success, fail) => {
     // 'then' means success
     console.log("6. " + message)
 }).catch((message) => {
-    // 'then' means success
+    // 'catch' means fail
     console.log("1. " + message)
 }).catch((message) => {
-    // 'then' means success
+    // 'catch' means fail
     console.log("2. " + message)
 }).catch((message) => {
-    // 'then' means success
+    // 'catch' means fail
     console.log("3. " + message)
 }).catch((message) => {
-    // 'then' means success
+    // 'catch' means fail
     console.log("4. " + message)
 }).catch((message) => {
-    // 'then' means success
+    // 'catch' means fail
     console.log("5. " + message)
 }).catch((message) => {
-    // 'then' means success
+    // 'catch' means fail
     console.log("6. " + message)
 })
 
