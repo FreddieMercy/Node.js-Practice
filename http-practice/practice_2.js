@@ -94,3 +94,17 @@ NewPromise((message) => {
     // fail/'catch'
     console.log("fail. " + message)
 });
+
+
+var p1 = new Promise((success, fail) => {
+    success("p1")
+})
+var p2 = new Promise((success, fail) => {
+    success("p2")
+})
+var p3 = new Promise((success, fail) => {
+    success("p3")
+})
+
+Promise.race([p1, p2, p3]).then((message) => { console.log(message) })
+Promise.all([p1, p2, p3]).then((message) => { console.log(message) })
