@@ -26,21 +26,26 @@ new Promise((success, fail) => {
 }).then((message) => {
     // 'then' means success
     console.log("1. " + message)
+    return message
 }).then((message) => {
     // 'then' means success
     console.log("2. " + message)
+    return message
 }).then((message) => {
     // 'then' means success
     console.log("3. " + message)
+    return message
 }).then((message) => {
     // 'then' means success
     console.log("4. " + message)
 }).then((message) => {
     // 'then' means success
     console.log("5. " + message)
+    return message
 }).then((message) => {
     // 'then' means success
     console.log("6. " + message)
+    return message
 }).catch((message) => {
     // 'catch' means fail
     console.log("1. " + message)
@@ -61,10 +66,12 @@ new Promise((success, fail) => {
     console.log("6. " + message)
 }).finally((message) => {
     console.log("finally 1. " + message)
+    return message
 }).finally((message) => {
     console.log("finally 2. " + message)
 }).finally((message) => {
     console.log("finally 3. " + message)
+    return message
 })
 
 // same to:
@@ -76,8 +83,10 @@ function NewPromise(success, fail) {
     else {
         fail("fail")
     }
+
+    console.log("finally")
 }
-// but has not 'finally'
+
 NewPromise((message) => {
     // success/'then'
     console.log("success. " + message)
