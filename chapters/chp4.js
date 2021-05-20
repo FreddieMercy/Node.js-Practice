@@ -12,6 +12,6 @@ setInterval(() => {
     console.log("Hello world@");
 }, 1000);
 
-const tutorial = require('./module_tutorial')
+const tutorial = require('../modules/module_tutorial')
 console.log(tutorial.items[0])
 console.log(tutorial.Person.name)
