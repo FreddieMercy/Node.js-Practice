@@ -1,10 +1,10 @@
-// 'async' allows using 'await' inside of it
-async function hello() {
-    // return await Promise.resolve("Hello");
-    return greeting = await Promise.resolve("Hello"); // whatever, async function always return 'Promise'
-};
+const { createReadStream } = require('fs');
+const stream = createReadStream('./data/big.txt');
 
-// hello().then((msg) => { console.log(msg) });
-hello().then(console.log);
+stream.on('data', (result) => {
+    console.log(result);
+});
 
-//TODO: require('util').promisify()
+stream.on('error', (error)=> {
+    console.log(error)
+})
